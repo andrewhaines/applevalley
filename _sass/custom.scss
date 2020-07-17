@@ -1,0 +1,53 @@
+body {
+  background: #6083fc;
+}
+
+nav {
+  &.navbar {
+    .navbar-brand {
+      color: $white;
+      font-weight: 700;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $white;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+h6 {
+  font-weight: 400;
+}
+
+span {
+  &.highlight {
+    background: rgba(242, 226, 107, 0.4);
+  }
+}
+
+.callout {
+  .svg-inline--fa {
+    &.heading {
+      background: $white;
+    }
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h5 {
+    span {
+      background: none;
+    }
+  }
+  h6 {
+    font-weight: 700;
+  }
+}
+
+.footer {
+  background: #6083fc;
+}
