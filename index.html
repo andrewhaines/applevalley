@@ -2,27 +2,6 @@
 layout: default
 ---
 <section>
-	<nav class="navbar navbar-expand-lg">
-		<div class="container">
-		  <a class="navbar-brand" href="#"><i class="fas fa-laptop-code mr-3 text-blue"></i>BluOcean LLC</a>
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-		        <a class="nav-link" href="#products"><i class="fal fa-drafting-compass mr-2"></i>Engineering</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#products"><i class="fal fa-browser mr-2"></i>Platform</a>
-		      </li>
-					<li class="nav-item">
-		        <a class="nav-link" href="#products"><i class="fal fa-location-circle mr-2"></i>Consulting</a>
-		      </li>
-					<li class="nav-item active">
-		        <a class="nav-link" href="#contact" onclick="gtag('event', 'contact', { event_category: 'sales', event_label: 'Navbar' });">Contact<i class="far fa-arrow-right ml-2"></i></a>
-		      </li>
-		    </ul>
-			</div>
-	  </div>
-	</nav>
 	<header>
 		<div class="diagonals blue">
 			<span></span>
@@ -55,13 +34,13 @@ layout: default
 	</div>
 	<div class="container py-lg-2">
 		<div class="row justify-content-center pb-lg-5 mt-lg-5">
-			<div class="col-lg-4 px-5 py-4 py-lg-5">
-				<h2><i class="far fa-drafting-compass mr-3 text-blue"></i>Engineering</h2>
-				<h6 class="p-0 m-0 mb-3">We design custom software with modern APIs using <strong>Ruby, Python, PHP, SQL, HTML, CSS, JavaScript, and more.</strong></h6>
+			<div class="col-lg-4 px-5 py-4 py-lg-5 order-lg-1">
+				<a href="/platform"><h2><i class="far fa-browser mr-3 text-blue"></i>Platform<i class="far fa-arrow-circle-right ml-3 text-gray"></i></h2></a>
+				<h6 class="p-0 m-0 mb-3">We create and deploy complex infrastructures and manage confusing things like <strong>hosting, DNS, performance, and SEO.</strong></h6>
 			</div>
 			<div class="col-lg-4 px-5 py-4 py-lg-5 order-lg-2">
-				<h2><i class="far fa-browser mr-3 text-blue"></i>Platform</h2>
-				<h6 class="p-0 m-0 mb-3">We create and deploy complex infrastructures and manage confusing things like <strong>hosting, DNS, performance, and SEO.</strong></h6>
+				<h2><i class="far fa-drafting-compass mr-3 text-blue"></i>Engineering</h2>
+				<h6 class="p-0 m-0 mb-3">We design custom software with modern APIs using <strong>Ruby, Python, PHP, SQL, HTML, CSS, JavaScript, and more.</strong></h6>
 			</div>
 			<div class="col-lg-4 px-5 py-4 py-lg-5 order-lg-3">
 				<h2><i class="far fa-location-circle mr-3 text-blue"></i>Consulting</h2>
@@ -74,11 +53,13 @@ layout: default
 			<div class="col-lg-5 pt-5">
 				<div class="sheet bg-white p-5">
 					<h2>Why BluOcean?</h2>
-					<p>Most businesses don't realize their true horizons. Owners are busy bailing water and fighting endless waves.</p>
+					<p>Most businesses don't realize their true horizons. Owners are busy bailing water and fighting waves.</p>
 					<p>BluOcean is a simpler approach to business technology. <span class="highlight">We design, build, and manage everything in one place</span> so you can run your business the way you need and focus on the future.</p>
 				</div>
 				<div class="sheet p-5">
-					<a href="#contact" class="btn btn-primary text-white float-lg-right d-block d-lg-inline-block font-weight-bold layer-3" style="border: none;">Get in Touch<i class="far fa-arrow-down ml-2"></i></a>
+					<h2><i class="far fa-play mr-3"></i>Getting started</h2>
+					<p>We'll migrate your hosting to a secure, private server and assemble your domain and DNS properties so you won't ever have to wonder about them again.</p>
+					<a href="#contact" class="btn btn-primary text-white float-lg-right d-block d-lg-inline-block font-weight-bold layer-3 mt-5" style="border: none;">Get in Touch<i class="far fa-arrow-down ml-2"></i></a>
 				</div>
 			</div>
 			<div class="col-lg-6 py-5">
@@ -89,23 +70,19 @@ layout: default
 </section>
 
 <section id="contact" class="pb-lg-2">
-	<div class="diagonals blue">
-		<span></span>
-		<span></span>
-	</div>
 	<div class="container pb-lg-2">
 		<div class="row justify-content-around pb-lg-5">
 			<div class="col-lg-5 callout py-5">
-				<h2 class="text-white"><i class="far fa-envelope mr-3"></i>Contact</h2>
+				<h2 class="text-white"><i class="far fa-tint mr-3"></i>Join us</h2>
 				<h6 class="p-0 text-white">Tell us about your business</h6>
 				<form action="https://formspree.io/andrew@gobluocean.com" method="POST" class="pb-5">
 				  <div class="form-group">
 				    <label for="name" class="sr-only">Name</label>
-				    <input type="text" class="form-control" id="input-name" aria-describedby="name" placeholder="Your name" name="name" required>
+				    <input type="text" class="form-control" id="input-name" aria-describedby="name" placeholder="Name" name="name" required>
 				  </div>
 					<div class="form-group">
 						<label for="email" class="sr-only">Email</label>
-				    <input type="email" class="form-control" id="input-email" aria-describedby="email" placeholder="Your email" name="email" required>
+				    <input type="email" class="form-control" id="input-email" aria-describedby="email" placeholder="Email" name="email" required>
 				  </div>
 					<div class="form-group">
 				    <label for="business_name" class="sr-only">Business Name</label>
@@ -122,7 +99,7 @@ layout: default
 				  </div> -->
 					<div class="form-group">
 				    <label for="details" class="sr-only">Details</label>
-				    <textarea class="form-control" id="input-details" rows="3" placeholder="What do you need help with?" name="details"></textarea>
+				    <textarea class="form-control" id="input-details" rows="3" placeholder="Tell us how we can help.." name="details"></textarea>
 						<input type="hidden" name="_next" value="{{ 'emailed.html' | relative_url }}" />
 						<input type="text" name="_gotcha" style="display:none" />
 				  </div>

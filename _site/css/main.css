@@ -6943,11 +6943,16 @@ form {
   color: #fcb4d7 !important; }
 
 body {
-  background: #6083fc; }
+  background: #6083fc;
+  background: linear-gradient(180deg, #6083fc 0%, #587dff 35%, #5178ff 100%);
+  font-family: "Open Sans", sans-serif; }
 
 nav.navbar .navbar-brand {
   color: #fff;
   font-weight: 700; }
+  @media (max-width: 575.98px) {
+    nav.navbar .navbar-brand {
+      padding-left: 1rem; } }
 nav.navbar .navbar-nav .nav-item .nav-link {
   color: #fff;
   font-weight: 700; }
@@ -6955,8 +6960,18 @@ nav.navbar .navbar-nav .nav-item .nav-link {
 h6 {
   font-weight: 400; }
 
+@media (max-width: 575.98px) {
+  ul {
+    padding-left: 1rem; } }
+ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  list-style: none; }
+
 span.highlight {
   background: rgba(242, 226, 107, 0.4); }
+  span.highlight.green {
+    background: rgba(114, 247, 149, 0.6); }
 
 .callout .svg-inline--fa.heading {
   background: #fff; }
@@ -6968,7 +6983,10 @@ span.highlight {
   font-weight: 700; }
 
 .footer {
-  background: #6083fc; }
+  background: #5178ff; }
 
 .text-blue {
   color: #0352c8; }
+
+.text-gray {
+  color: #9196aa; }

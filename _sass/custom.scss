@@ -1,5 +1,7 @@
 body {
-  background: #6083fc;
+  background: rgb(96,131,252);
+  background: linear-gradient(180deg, rgba(96,131,252,1) 0%, rgba(88,125,255,1) 35%, rgba(81,120,255,1) 100%);
+  font-family: $body;
 }
 
 nav {
@@ -7,6 +9,9 @@ nav {
     .navbar-brand {
       color: $white;
       font-weight: 700;
+      @include media-breakpoint-down(xs) {
+        padding-left: 1rem;
+      }
     }
     .navbar-nav {
       .nav-item {
@@ -23,9 +28,23 @@ h6 {
   font-weight: 400;
 }
 
+ul {
+  @include media-breakpoint-down(xs) {
+    padding-left: 1rem;
+  }
+  li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+  }
+}
+
 span {
   &.highlight {
     background: rgba(242, 226, 107, 0.4);
+    &.green {
+      background: rgba(114, 247, 149, 0.6);
+    }
   }
 }
 
@@ -49,9 +68,13 @@ span {
 }
 
 .footer {
-  background: #6083fc;
+  background: #5178ff;
 }
 
 .text-blue {
   color: $blue;
+}
+
+.text-gray {
+  color: $gray;
 }
