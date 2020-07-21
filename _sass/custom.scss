@@ -28,6 +28,16 @@ h6 {
   font-weight: 400;
 }
 
+p {
+  a {
+    border-bottom: 1px solid $blue;
+    &:hover {
+      text-decoration: none;
+      border-bottom: 1px solid $charcoal;
+    }
+  }
+}
+
 ul {
   @include media-breakpoint-down(xs) {
     padding-left: 1rem;
@@ -77,4 +87,10 @@ span {
 
 .text-gray {
   color: $gray;
+}
+
+.text-white {
+  a {
+    color: $white;
+  }
 }

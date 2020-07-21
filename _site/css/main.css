@@ -6960,6 +6960,12 @@ nav.navbar .navbar-nav .nav-item .nav-link {
 h6 {
   font-weight: 400; }
 
+p a {
+  border-bottom: 1px solid #0352c8; }
+  p a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #21252b; }
+
 @media (max-width: 575.98px) {
   ul {
     padding-left: 1rem; } }
@@ -6990,3 +6996,6 @@ span.highlight {
 
 .text-gray {
   color: #9196aa; }
+
+.text-white a {
+  color: #fff; }
