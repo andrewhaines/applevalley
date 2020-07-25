@@ -6983,6 +6983,9 @@ span.highlight {
   background: #fff; }
 .callout h1 {
   font-size: 3.5rem; }
+  @media (max-width: 575.98px) {
+    .callout h1 {
+      font-size: 2.8rem; } }
 .callout h5 span {
   background: none; }
 .callout h6 {
