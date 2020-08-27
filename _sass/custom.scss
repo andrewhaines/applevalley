@@ -1,6 +1,7 @@
 body {
-  background: rgb(96,131,252);
-  background: linear-gradient(180deg, rgba(96,131,252,1) 0%, rgba(88,125,255,1) 35%, rgba(81,120,255,1) 100%);
+  // background: rgb(96,131,252);
+  // background: #a7aeff;
+  background: linear-gradient(180deg, #a7aeff 0%, rgba(88,125,255,1) 75%, rgba(81,120,255,1) 100%);
   font-family: $body;
 }
 
