@@ -1,8 +1,12 @@
 body {
   // background: rgb(96,131,252);
   // background: #a7aeff;
-  background: linear-gradient(180deg, #a7aeff 0%, rgba(88,125,255,1) 75%, rgba(81,120,255,1) 100%);
+  background: linear-gradient(180deg, #fff 0%, #eee 75%, #ddd 100%);
   font-family: $body;
+}
+
+header {
+  padding: 0;
 }
 
 nav {
@@ -26,6 +30,7 @@ nav {
 }
 
 h6 {
+  font-family: $body;
   font-weight: 400;
 }
 
@@ -77,16 +82,21 @@ span {
     }
   }
   h6 {
-    font-weight: 700;
+    font-family: $body;
+    font-weight: 400;
   }
 }
 
 .footer {
-  background: #5178ff;
+  background: $blue;
 }
 
 .text-blue {
   color: $blue;
+}
+
+.text-red {
+  color: $red;
 }
 
 .text-gray {
