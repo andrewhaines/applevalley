@@ -71,7 +71,8 @@ span {
     }
   }
   h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
+    font-weight: bold;
     @include media-breakpoint-down(xs) {
       font-size: 2.8rem;
     }
@@ -88,7 +89,7 @@ span {
 }
 
 .footer {
-  background: $blue;
+  background: transparent;
 }
 
 .text-blue {
