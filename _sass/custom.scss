@@ -1,12 +1,14 @@
 body {
   // background: rgb(96,131,252);
   // background: #a7aeff;
-  background: linear-gradient(180deg, #fff 0%, #eee 75%, #ddd 100%);
+  background: linear-gradient(180deg, #fff 0%, #fff9b4 75%, #fff 100%);
   font-family: $body;
 }
 
 header {
   padding: 0;
+  h1 {
+  }
 }
 
 nav {
@@ -108,4 +110,14 @@ span {
   a {
     color: $white;
   }
+}
+
+.btn-pink {
+  background: $pink;
+  color: $white;
+}
+
+.btn-cream {
+  background: $cream;
+  color: $charcoal;
 }
